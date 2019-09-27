@@ -1,0 +1,60 @@
+
+
+	
+	DBMS - Database Management System	
+	MySQL -- RDBMS  - Relational Database Management System
+	
+	1. Database
+	
+		-- collention of entity
+		
+		-- Entity = Table
+		
+		CUSTOMER - TABLE
+		- column / field inforation -- name -- 
+	
+	--- DDL - Data Defination Language - Create / Drop
+	--- DML - Data Manipulation Language - Insert / Update / Delete -- 
+	--- DCL - Data Control Language - Commit / Rollback
+	--- DQL - Data Query Language - select
+
+	--- Create Database 
+
+	> create database shopping_app;
+
+	> show databases;
+
+	> use shopping_app;
+
+	> show tables; 
+
+	> create table customer(id int primary key AUTO_INCREMENT,
+	name varchar(20) not null,
+	contact_no varchar(10) not null,
+	address varchar(100),
+	city varchar(30));
+	
+	> desc customer;
+
+	> insert into customer (name,contact_no,address,city) values ('keyur',
+	'7387029671','pimple saudagar','pune');
+	
+	>  insert into customer (name,contact_no,address,city) values ('jamil',
+	'7387029123','united kingdom','lundon');
+	
+	>  insert into customer (name,contact_no,address,city) values ('rajani',
+	'7387029432','united kingdom','lundon');	
+		
+	
+	> select * from customer;
+
+	> select name,contact_no from customer;
+	
+	> select * from customer where city = 'lundon';
+
+	> update customer set city = 'lords' where name = 'rajani';
+	
+	> delete from customer where name = 'keyur';
+
+	> drop table customer;
+				
